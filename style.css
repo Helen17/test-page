@@ -1,0 +1,291 @@
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+header{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle{
+    margin-top: 30px;
+    width: 15vh;
+    height:15vh;
+    background: rgb(0, 0, 70);
+    border-radius:50%;
+}
+
+.around-circle{
+    display:flex;
+    justify-content: center;
+}
+
+.title-name{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-right:0;
+    padding:0;
+}
+
+.title-span{
+    background: rgb(0, 0, 70);
+    color:white;
+    padding:2px 5px;
+    margin:1px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.logo{
+    margin:20px;
+    display:flex;
+    justify-content: center;
+}
+
+.logo > img {
+    width:60%;
+    height:60%;
+}
+
+main{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+.scroll-text{
+    margin:10px;
+}
+
+.footer{
+    height:230px;
+    width:100%;
+    background:rgb(0, 0, 44);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.social{
+    height:50%;
+}
+
+.icons{
+    display:flex;
+    justify-content: center;
+}
+
+.icon{
+    width:15px;
+    margin:10px;
+    border:1px solid white;
+    border-radius: 50%;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+
+.icon:hover{
+    color:rgb(0, 0, 70);
+    background: white;
+    border:1px solid black;
+}
+
+.icon-arrow{
+    margin:10px;
+    height:15px;
+    width:15px;
+    border:1px solid black;
+    border-radius: 50%;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.copyright{
+    height:50%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom:10px;
+}
+
+.media{
+    color: rgb(0, 0, 44);
+    background:white;
+    padding: 5px 8px;
+}
+
+.articles{
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image{
+    width:150%;
+    height:100%;
+    border-radius:5px;
+    position: relative;
+    left: -30%;
+}
+
+.video{
+    width:90%;
+    border-radius:5px;
+    cursor: pointer;
+    margin:10px 0;
+}
+
+.article{
+    display:flex;
+    flex-direction:column;
+    width: 90%;
+    border-left: 1.5px solid rgba(128, 128, 128, 0.336);
+    padding-left: 10%;
+    margin-left: 10%; 
+    padding-bottom:30px;
+}
+
+.date-title{
+    display:flex;
+    flex-direction: row;
+}
+
+.date{
+    width:2.5%;
+    height:45px;
+    background: white;
+    color:rgb(219, 1, 1);
+    font-weight: bold;
+    position: absolute;
+    left:27%;
+    padding:10px 0px;
+    font-family: 'Coda Caption', sans-serif;
+}
+
+.title{
+    display:flex;
+    justify-content: flex-start;
+    width: 100%;
+    color:rgb(0, 0, 44);
+    font-family: 'Coda Caption', sans-serif;
+    padding:0;
+}
+
+.description{
+    font-size:20px;
+    margin-top:0;
+}
+
+.fa-heart{
+    color: rgb(216, 2, 2);
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.circle > .fas{
+    height:106%;
+    width: 106%;
+}
+
+@media screen and (max-width: 768px){
+    main {
+        width: 90%;
+    }
+
+    .date{
+        left:16.5%;
+    }
+
+    .article {
+        width: 95%;
+    }
+
+    .main-image{
+        left: -35%;
+    }
+
+    .circle{
+        width: 10vh;
+        height:10vh;
+    }
+
+    .fa-heart{
+        font-size:12px;
+    }
+
+    .article{
+        padding-left: 15%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .main-image{
+        left: -32%;
+    }
+
+    .article {
+        width: 100%;
+        margin-left:0;
+    }
+
+    .date{
+        left:9%;
+        width:8%;
+        height:30px;
+    }
+
+    .circle{
+        width: 7vh;
+        height:7vh;
+    }
+
+    .fa-heart{
+        font-size:10px;
+    }
+
+    .title {
+        font-size:20px;
+    }
+
+    .date{
+        font-size:12px;
+    }
+
+    .description{
+        font-size:17px;
+    }
+
+    header{
+        width:95%;
+    }
+
+    .title-span {
+        font-size:13px;
+    }
+}
